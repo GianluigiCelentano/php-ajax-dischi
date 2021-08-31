@@ -13,13 +13,13 @@
     <div class="row">
         <div class="col">
             <?php
-                require_once __DIR__ . "/database.php";
+                require_once __DIR__ . "/database-prima-milestone.php";
                 
                 foreach($database as $song) {
                     echo $song["title"] . "<br>";
                     echo $song["author"] . "<br>";
                     echo $song["year"] . "<br>";
-                    echo "<img src=\"{$song["poster"]}\"> <br>";
+                    echo "<img src=\"{$song["poster"]}\"> <br> <hr>";
                 }
             ?>
         </div>
